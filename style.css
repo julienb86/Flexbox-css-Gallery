@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+}
+.panels{
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  display: flex;
+}
+.panel{
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition:
+  font-size 0.5s cubic-bezier(0,1.49,1,-0.2),
+  flex 0.5s cubic-bezier(0,1.49,.97,.73);
+}
+.panel > *{
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+.panel >*:first-child{transform: translateY(-100%);}
+.panel.open-active >*:first-child{transform: translateY(0);}
+.panel >*:last-child{transform: translateY(100%);}
+.panel.open-active >*:last-child{transform: translateY(0);}
+
+
+.panel.open{
+  font-size: 1.8em;
+  flex: 5;
+}
+.panel1{
+  margin: 0;
+  background:url('https://picsum.photos/1200/900?image=1075');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.panel2{
+  background:url('https://picsum.photos/1200/900?image=1070');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.panel3{
+  background:url('https://picsum.photos/1200/900?image=1042');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.panel4{
+  background:url('https://picsum.photos/1200/900?image=1004');
+  background-position: center;
+  background-size: cover;
+
+}
